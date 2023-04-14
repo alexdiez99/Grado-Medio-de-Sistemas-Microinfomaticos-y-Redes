@@ -1,0 +1,222 @@
+:root{
+			--main-white-color: white;
+			--main-darkblue-color: #050922;
+			--main-purple-color:#9e89b8;
+			--main-backgroung-color: #3D2C53;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		ul{
+			list-style:none;
+		}
+		a{
+			text-decoration: none;
+			color: inherit;
+		}
+		body{
+			color: white;
+			font: 16px/1.5 "Dosis", sans-serif;
+			/*display: flex;
+			flex-direction:column;*/
+		}
+		
+/*------------------WRAPPER---------------------*/
+		#wrapper{
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+
+		}
+		#wrapper > * {
+			padding: 20px;
+			/*background: #050922;*/
+		}
+/*------------------HEADER---------------------*/
+		.page-header{
+			background: var(--main-darkblue-color);  
+			font-weight: bold;
+			top: 0;
+			text-align: center;
+			position: sticky;
+			font-family: 'Roboto slab';
+
+		}
+		.hr-gradient{
+			width: 100%;
+			height: 6px;
+			border: 0px;
+			background-image: linear-gradient(to left, #9e89b8 1%, white 99%);
+		}
+		.img_header{
+			display: block;
+			margin: auto;
+			padding: 3px;
+			width: 50px;
+			height: 50px;
+			float: left;
+		}
+		.title_header{
+			text-align: center;
+			vertical-align: middle;
+			font-style: italic;
+		}
+		.page-header h2{
+			text-align: left;
+		}
+		.page-header nav {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			text-align: left;
+		}
+		.page-header ul {
+			display: flex;
+			order: 1;
+			width: 100%;
+			margin-top: 15px;
+		}
+		/*.page-header ul li:not(:last-child){
+			padding-right: 15px;*/
+		}
+		.page-header li {
+			list-style-type: none;
+			position: relative;
+			display: inline;
+		}
+		.page-header a{
+			text-align: center;
+			font-size: 18px;
+		}
+		.page-header li a{
+			text-decoration: none;
+			display: inline-block;
+			padding: 5px 10px;
+			width: 100%;
+			height: 40px auto;
+			border: 1px solid #000;
+			background-color: #000;
+		}
+		.page-header li a:hover{
+			color: black;
+			background-color: var(--main-purple-color);
+		}
+		.page-header li ul{
+			padding: 0;
+			margin: 0;
+			display: none;
+			position: absolute;
+			top: 3em;
+			left: 3em;
+			width: 100%;
+		}
+		.page-header li:hover ul{
+			display: block;
+			color: blue;
+		}
+/*--------------------------MAIN(BODY)----------------*/
+		.page-main{
+			/*margin: 0 auto;
+			padding-top: 15rem 0;*/ 
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-grow: 1;
+			min-height: 350px;
+			background: var(--main-backgroung-color) url(/IMG/Background-micro-1.jpg) no-repeat center /cover;
+			background-blend-mode: soft-light;
+			color: var(--main-white-color);
+			font-family: Roboto;
+
+		}
+		.page-main h1{
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 20px;
+		}
+		.page-main h2{
+			font-size: 24;
+			line-height: 32px;
+		}
+		.page-main p{
+			margin-top: 10px;
+			font-size: 14px;
+			text-align: justify;
+		}
+		.page-main div{
+			min-width: 500px;
+			max-width: 1200px;
+		}
+		.page-main img{
+			float: right;
+			display: block;
+			margin: auto;
+			padding: 5px;
+		}
+		.page-main ul{
+			padding-left: 20px;
+			margin-top: 10px;
+			text-align: justify;
+		}
+
+/*-------------------------FOOTER--------------*/
+		.page-footer{
+			display: flex;
+			flex-direction: column-reverse;
+			background: var(--main-darkblue-color);
+			font-style: italic;
+			text-align: left;
+		}
+		.page-footer p{
+			font-style: italic;
+			font-size: 10px;
+			text-align: left;
+		}
+		.page-footer ul {
+			display: flex;
+			font-size: 1.5rem;
+			margin-bottom: 5px;
+		}
+		.page-footer ul li:not(:last-child) {
+			margin-right: 20px;
+		}
+		.page-footer img {
+			height: 30px;
+			width: 30px;
+			background-image: none;
+		}
+/*-----------------------------FONT-------------------------*/
+		@font-face{
+			font-family: Roboto;
+			src: url(fonts/roboto/Roboto-Black.ttf),url(fonts/roboto/Roboto-BlackItalic.ttf),url(fonts/roboto/Roboto-Bold.ttf),url(fonts/roboto/Roboto-BoldCondensed.ttf),url(fonts/roboto/Roboto-BoldCondensedItalic.ttf),url(fonts/roboto/Roboto-BoldItalic.ttf),url(fonts/roboto/Roboto-Condensed.ttf),url(fonts/roboto/Roboto-CondensedItalic.ttf),url(fonts/roboto/Roboto-Italic.ttf),url(fonts/roboto/Roboto-Light.ttf),url(fonts/roboto/Roboto-LightItalic.ttf),url(fonts/roboto/Roboto-Medium.ttf),url(fonts/roboto/Roboto-MediumItalic.ttf),url(fonts/roboto/Roboto-Regular.ttf),url(fonts/roboto/Roboto-Thin.ttf),url(fonts/roboto/Roboto-ThinItalic.ttf),;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+/*---------------------MQ-----------------------------------*/
+		@media screen and (min-width: 550px) {
+			.page-header ul {
+				width: 100%;
+				margin-top: 0;
+			}
+			.page-header .cta-contact {
+				order: 1;
+			}
+			.page-footer {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.page-footer ul {
+				margin-bottom: 0;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			body {
+				/*font-size: 18px;*/
+			}
+			.page-main {
+				padding-left: 90px;
+			}
+		}

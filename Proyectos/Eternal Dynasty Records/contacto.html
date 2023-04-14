@@ -1,0 +1,162 @@
+<!--https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-full-screen-responsive-page-with-flexbox--cms-32086-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Eternal Dynasty Records">
+	<meta name="description" content=" coma@reborn.com (Gabriel Pogor Dima), Alex Diez Riabets">
+	<link rel="icon" type="image/gif" href="IMG/0_eternaldynasty.jpg">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/form.css">
+	<link rel="stylesheet" type="text/css" href="CSS/table.css">
+	<script type="text/javascript" src="JS/form.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<header class="page-header">
+		<nav>
+			<a href="index.html" title="Inicio"><img src="IMG/0_eternaldynasty.jpg" class="img_header" alt="Inicio"></a>
+			<h2 class="title_header">Eternal Dynasty Records</h2>
+			<ul>
+          		<li>
+          			<a href="index.html">INICIO</a>
+          		</li>
+          		<li>
+          			<a href="plan_marketing.html">PLAN MARKETING</a>
+          		</li>
+          		<li>
+          			<a href="donde_encontrarnos.html">DONDE ENCONTRARNOS</a>
+          		</li>
+          		<li>
+          			<a href="presupuesto.html">PRESUPUESTO</a>
+          		</li>
+          		<li>
+          			<a href="contacto.html">CONTACTO</a>
+          		</li>
+          		<li>
+          			<a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
+          		</li>
+        	</ul>	
+		</nav>
+		<hr class="hr-gradient" />
+	</header>
+	<main class="page-main">
+		<div>
+		    <h1>Contacto</h1>
+			<form name="formulario" action="mailto:coma@reborn.com" method="post" enctype="text/plain">
+				<p align="center">Para hacerte patrocinador de nuestro evento, porfa vor rellena los siguientes datos y nos podremos en contacto contigo lo antes posible para terminar el proceso de inscripción.</p>
+				<fieldset id="form-fieldset">
+					<legend id="form-legend">1 Datos personales</legend>
+						<p id="form-p2">Todos los campos con * son obligatorios</p>
+						<ul id="form-ul">
+		  					<li id="form-li">
+		    					<label id="form-label">Nombre* </label>
+		    					<input type="text" name="nombre">
+		  					</li>
+		  					<li id="form-li">
+		    					<label id="form-label">Primer apellido* </label>
+		    					<input type="text" name="apellido1">
+		  					</li>
+		  					<li id="form-li">
+		    					<label id="form-label">Segundo apellido </label>
+		    					<input type="text" name="apellido2">
+		  					</li>
+		  					<li id="form-li">
+		    					<label id="form-label">DNI o Pasaporte </label>
+		    					<input type="text" name="dni" placeholder="DNI o Pasaporte">
+		  					</li>
+		  					<li id="form-li">
+		    					<label id="form-label">Fecha de nacimiento </label>
+		    					<input type="date" name="fecha">
+		  					</li>
+		 				</ul>
+				</fieldset>
+			<br>
+				<fieldset id="form-fieldset">
+					<legend id="form-legend">2 Datos de contacto</legend>
+					<ul id="form-ul">
+					  <li id="form-li">
+					    <label id="form-label">Correo electrónico* </label>
+					    <input type="email" name="correo" placeholder="Correo electrónico">
+					  </li>
+					  <li id="form-li">
+					    <label id="form-label">Código postal* </label>
+					    <input type="text" name="cp">
+					  </li>
+					  <li id="form-li">
+					    <label id="form-label">Dirección postal* </label>
+					    <input type="text" name="direccion">
+					  </li>
+					  <li id="form-li">
+					    <label id="form-label">Población* </label>
+					    <input type="text" name="poblacion">
+					  </li>
+					 </ul>
+				</fieldset>
+			<br>
+				<fieldset id="form-fieldset">
+					<legend id="form-legend">3 Datos de inscripción</legend>
+					<ul id="form-ul">
+					  <li id="form-li">
+					    <label id="form-label">Tipo* </label>
+					    <select name="seleccionar">
+					    	<option value="Elegir">Elegir
+					    	<option value="Senior">Senior</option>
+					    	<option value="Junior">Junior</option>
+					    </select>
+					  </li>
+					  <li id="form-li">
+					    <label id="form-label">Cuota* </label>
+					    <select name="seleccionar2">
+					    	<option value="Escoge una opción">Escoge una opción
+					    	<option value="General - 5€/mes">General - 5€/mes</option>
+					    	<option value="Jubilados - 3€/mes">Jubilados - 3€/mes</option>
+					    	<option value="Familiar - 11€/mes">Familiar - 11€/mes</option>
+					    	<option value="Otros">Otros</option>
+					    </select>  
+					  </li>
+					 </ul>	
+					 <br>
+					 <fieldset id="form-fieldset2">
+					 	<legend>Periodicidad</legend>
+					 	<label>
+					 		<input type="radio" name="Trimestral" value="Trimestral">Trimestral
+			         		<input type="radio" name="Semanal" value="Semanal">Semanal
+			        		<input type="radio" name="Anual" value="Anual">Anual
+					 	</label>
+					 </fieldset>
+					 <p align=center><input type="button" name="button" value="ENVIAR" id="boton" onclick="valida_envia()"></p>
+				</fieldset>
+			</form>
+			
+		</div>
+	</main>
+	<footer class="page-footer">
+		<small>© Proyecto SMR 19/20 "Eternal Dynasty Records" por Gabriel Pogor Dima y Alex Diez Riabets.</small>
+		<ul>
+			<li>
+				<a href="https://es-la.facebook.com/" target="_blank" title="facebook">
+					<i class="icon ion-logo-facebook"><img src="IMG/icon-logo-facebook.png" alt="facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/?lang=es" target="_blank" title="twitter">
+					<i class="icon ion-logo-twitter"><img src="IMG/icon-logo-twitter.png" alt="twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/?hl=es" target="_blank" title="instagram">
+					<i class="icon ion-logo-instagram"><img src="IMG/icon-logo-instagram.png" alt="instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/" target="_blank" title="github">
+					<i class="icon ion-logo-github"><img src="IMG/icon-logo-github.png" alt="github"></i>
+				</a>
+			</li>
+		</ul>
+	</footer>
+</div>
+</body>
+</html>

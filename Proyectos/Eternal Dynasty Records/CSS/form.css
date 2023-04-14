@@ -1,0 +1,51 @@
+		#form-fieldset {
+			margin: 0 auto; 
+			width: 60%; padding: 1em;
+		 	border: solid 3px; 
+		 	border-radius: 10px; 
+		 	border-color: #c2ede4; 
+		 	background-color: #c2ede4;
+		 	color:black;
+		 	font-family: Roboto;
+		}
+		#form-legend {
+			font-family: Roboto; 
+			font-size: 18px; 
+			font-weight: bold; 
+			padding: 0em;
+			padding-top: 27px;
+		}
+		#form-p2 {
+			font-style: italic; 
+			font-weight: bold; 
+			color:grey; 
+			font-family: Roboto; 
+			font-size: 13px
+		}
+		#form-ul {
+			list-style: none; 
+			padding: 0; 
+			margin: 0;
+		}
+		#form-li {
+			margin-top: 1em
+		}
+		#form-label {
+			display: inline-block; 
+			width: 170px; 
+			text-align: left;
+		}
+		#form-fieldset2 {
+			width: 300px; 
+			border-color: #73dae6
+		}
+		#boton {
+			width: 150px; 
+			height: 35px; 
+			background-color: #251975; 
+			color: white;
+		}
+		@font-face{
+			font-family: Roboto;
+			src: url(fonts/roboto/Roboto-Black.ttf),url(fonts/roboto/Roboto-BlackItalic.ttf),url(fonts/roboto/Roboto-Bold.ttf),url(fonts/roboto/Roboto-BoldCondensed.ttf),url(fonts/roboto/Roboto-BoldCondensedItalic.ttf),url(fonts/roboto/Roboto-BoldItalic.ttf),url(fonts/roboto/Roboto-Condensed.ttf),url(fonts/roboto/Roboto-CondensedItalic.ttf),url(fonts/roboto/Roboto-Italic.ttf),url(fonts/roboto/Roboto-Light.ttf),url(fonts/roboto/Roboto-LightItalic.ttf),url(fonts/roboto/Roboto-Medium.ttf),url(fonts/roboto/Roboto-MediumItalic.ttf),url(fonts/roboto/Roboto-Regular.ttf),url(fonts/roboto/Roboto-Thin.ttf),url(fonts/roboto/Roboto-ThinItalic.ttf),;
+		}
