@@ -1,0 +1,12 @@
+		.budget tr, td {
+			border: 5px solid black;
+			margin: 0 auto; 
+			width: 0%; 
+			padding: 1em;
+			text-align: left;
+			color: 	black;
+			border-right: none;
+			border-top-width: 0px;
+			border-bottom-width: 0px;
+			color: white;
+			border-color: white;
