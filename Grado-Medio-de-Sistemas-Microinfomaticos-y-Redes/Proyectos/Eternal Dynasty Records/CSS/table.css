@@ -1,0 +1,19 @@
+		.budget table{
+			border-collapse: collapse;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.budget tr, th, td {
+			border: 1px solid black;
+			margin: 0 auto; 
+			width: 0%; 
+			padding: 1em;
+			text-align: center;
+			border-color: #c2ede4;
+			color:white;
+			font-weight:bold;
+		}
+		.budget tbody{
+			background: url(/IMG/Background-mesa-mezclas-2.jpg) no-repeat center /cover;
+			background-blend-mode: soft-light;
+		}
